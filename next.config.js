@@ -3,7 +3,7 @@ const nextConfig = {
   reactStrictMode: true,
 
   images: {
-    domains:["logos-download.com","img.freepik.com"]
+    domains:["logos-download.com","www.freepnglogos.com"]
   },
 }
 
