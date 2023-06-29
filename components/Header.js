@@ -1,13 +1,13 @@
 import Image from 'next/image'
 import React from 'react'
-import { HomeIcon } from '@heroicons/react/24/outline'
-import { Input } from 'postcss'
+import { HomeIcon, PlusCircleIcon } from '@heroicons/react/24/outline'
+
 
 export default function Header() {
   return (
 
 
-        <div className='flex items-center justify-between max-w-6xl'>
+        <div className='flex items-center justify-between max-w-6xl mx-4 xl:mx-auto'>
                     {/* Left */}
             <div className='cursor-pointer h-24 w-24 relative hidden lg:inline-grid'>
                 <Image
@@ -32,7 +32,11 @@ export default function Header() {
             </div>
 
         {/* Right */}
-            <h1>Right Side</h1>
+           <div className='flex space-x-4 items-center'>
+               <HomeIcon className='hidden md:inline-flex h-6 cursor-pointer hover:scale-125 transition-transform duration-200 ease-out'/>
+               <PlusCircleIcon className='h-6 cursor-pointer hover:scale-125 transition-transform duration-200 ease-out'/> 
+                <img src='https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/SNice.svg/1200px-SNice.svg.png' className='h-10 rounded-full cursor-pointer'></img>
+           </div>
         </div>
 
 
